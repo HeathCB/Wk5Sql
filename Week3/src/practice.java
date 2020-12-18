@@ -3,12 +3,8 @@ import java.util.stream.DoubleStream;
 public class practice {
 	
 	
-	 // Write a method that takes an array of int and returns true(boolean) if the sum 
-	// of all the elements in the array are greater than 100.
-	//10.	Write a method that takes an array of double and returns the average of all the elements in the array.
-
-	
-
+	 //This is all my methods for week 3 coding assignment
+	// below are the variables and the Sys.outs of all my methods
 
 
 public static void main(String[] args) {
@@ -36,7 +32,7 @@ public static void main(String[] args) {
 	
 	System.out.println(areYouEarningEnough( paychecks, bills, moneyForHobbies, funMoney));
 }
-
+//7
 public static String multiConcat (String str, int max)
 {
  String result = "";
@@ -44,12 +40,12 @@ public static String multiConcat (String str, int max)
  result += str;
  return result;
 }
-
+//8
 public static String createFullName(String w , String q) {
 	String fullName = q + " " + w;
 	return  fullName;
 	}
-
+//9
 public static boolean sumArray(int[] number) {
 	int sum = 0;
 	for (int s : number){
@@ -61,7 +57,7 @@ public static boolean sumArray(int[] number) {
 	}else
 	return false;
 }
-
+//10
 public static double calculateAverage(double[] numbers) {
 	double sum = 0;
 	for (double x : numbers) {
@@ -70,7 +66,7 @@ public static double calculateAverage(double[] numbers) {
 	return sum / numbers.length;
 		
 }
-
+//11
 public static boolean isGreater (double[] numbers1, double[] numbers2) {
 	double x = DoubleStream.of(numbers1).sum();
 	double y = DoubleStream.of(numbers2).sum();
@@ -80,7 +76,7 @@ public static boolean isGreater (double[] numbers1, double[] numbers2) {
 	return false;
 }
 }
-
+//12
 public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
 	if( isHotOutside && moneyInPocket > 10.50) {
 	
@@ -88,7 +84,7 @@ public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
 	}else
 	return false;
 }	
-
+//13
 public static String areYouEarningEnough(double[] paychecks, double[] bills, boolean moneyForHobbies, boolean funMoney) {
 	double v = DoubleStream.of(paychecks).sum();
 	double c = DoubleStream.of(bills).sum();
