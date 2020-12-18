@@ -98,7 +98,9 @@ public static String areYouEarningEnough(double[] paychecks, double[] bills, boo
 
 		return yy;
 	
-	
+	//This method decides if you are earning enough money by taking the amount of multiple arrays and subtracting them then seeing how much you have left over. Than it checks to 
+	// see if its over a certain amount than checks two boolean values and returns two strings. The variables in this method are closely connected to things that have been on my mind
+	// it seemed sort of relatable and easy for me to design a method around.
 
 }
 
