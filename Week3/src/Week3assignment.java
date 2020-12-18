@@ -11,26 +11,26 @@ public class Week3assignment {
 		int lengthOfAges = ages.length;
 		int difference = Math.abs(ages[ lengthOfAges - lengthOfAges ] - ages[ lengthOfAges -1]);
 				System.out.println( difference );
-				
+		//2		
 		ages[7] = 104;
 				System.out.println( difference );
-		
+		//3
 		int sum = 0;
 		for (int x : ages) 
 				sum +=x ;
 				System.out.println(sum / ages.length);
-		
-		String[] names = { "Sam", "Tommy", "Tim", "Sally", "Buck", "Bob" };
-		int[] nameLengths = {names[0].length(), names[1].length(), names[2].length(), names[3].length(), names[4].length(),names[5].length()};
-		for (int i1 = 0; i1 < names.length; i1++) {
-			
+		//4
+	String[] names = { "Sam", "Tommy", "Tim", "Sally", "Buck", "Bob" };
+	int[] nameLengths = {names[0].length(), names[1].length(), names[2].length(), names[3].length(), names[4].length(),names[5].length()};
+	for (int i1 = 0; i1 < names.length; i1++) {	
 		System.out.println( names[i1] + nameLengths[i1] );
-		}
-		int h = 0;
-		do {
-			System.out.println(IntStream.of(nameLengths).sum());
-			h++;
-		}while ( h > nameLengths.length);
+	}
+		//5
+	int h = 0;
+	do {
+		System.out.println(IntStream.of(nameLengths).sum());
+		h++;
+	}while ( h > nameLengths.length);
 		
 		}
 	}
