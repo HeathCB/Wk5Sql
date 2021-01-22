@@ -17,7 +17,7 @@ public class Player {
 	}
 	
 	
-	//creating a player with the score set to zero	
+	//creating a player with the score set to zero.	
 	public Player(String newName) {
 		name = newName;
 		score = 0;

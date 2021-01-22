@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Deck {
-	//1. b. ii. Created and array list of Card
+	//1. b. ii. Created and array list of Card.
 	ArrayList<Card> cards = new ArrayList<>();
 	// created list of suit
 	List<String> suits = Arrays.asList("Clubs", "Diamonds", "Hearts", "Spades");

@@ -6,7 +6,7 @@ public class Card {
 	private String name;
 	private int value;
 	// creating a card and adding inputs to value
-	//  and adding suit to name via string concatenation
+	//  and adding suit to name
 	public Card( int values, String suit ) {
 		value = values;
 		switch ( values ) {

@@ -23,7 +23,6 @@ public class Application {
 		Card playerOneCard = heath.flip();
 		Card playerTwoCard = tyler.flip();
 		
-		tyler.describe();
 		
 	//5a Compare the value of each card returned by the two players flip methods and incrementing the score accordingly.	
 		if ( playerOneCard.getValue() > playerTwoCard.getValue() ) {
@@ -35,17 +34,17 @@ public class Application {
 	
 	//6 After the loop compare the final score from each player.
 	//7 print the final score of each player or draw depending on score.
-//	if ( heath.getScore() > tyler.getScore() ) {
-//		System.out.println( "Heath is the winner!!!!" );
-//		System.out.println( "Heath won with a score of " + " " + heath.getScore() );
-//	}else if ( heath.getScore() < tyler.getScore() ) {
-//		System.out.println( "Tyler is the winner!!!!" );
-//		System.out.println( "Tyler won with a score of " + " " + tyler.getScore() );
-//	}else {
-//		System.out.println( "Its a draw!!!!" );
-//		System.out.println( "Heaths score:" + " " + heath.getScore() );
-//		System.out.println( "Tylers score:" + " " + tyler.getScore() );
-//	}
+	if ( heath.getScore() > tyler.getScore() ) {
+		System.out.println( "Heath is the winner!!!!" );
+		System.out.println( "Heath won with a score of " + " " + heath.getScore() );
+	}else if ( heath.getScore() < tyler.getScore() ) {
+		System.out.println( "Tyler is the winner!!!!" );
+		System.out.println( "Tyler won with a score of " + " " + tyler.getScore() );
+	}else {
+		System.out.println( "Its a draw!!!!" );
+		System.out.println( "Heaths score:" + " " + heath.getScore() );
+		System.out.println( "Tylers score:" + " " + tyler.getScore() );
+	}
 	}
 
 }
