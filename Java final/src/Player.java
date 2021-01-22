@@ -24,10 +24,12 @@ public class Player {
 	}
 	// 1. c. ii. 1. creating the describe method prints out info about the player and calls the describe method for each card in the hand list.
 	public void describe() {
+		System.out.println( name );
+		
 		for ( Card card : hand ) {
-			card.describeCard();
-			System.out.println ( name );
+			card.describeCard();	
 		}
+		
 	}
 	//1. c. ii. 2 flip returns the top card of the hand
 	public Card flip() {

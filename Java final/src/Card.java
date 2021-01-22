@@ -37,7 +37,7 @@ public class Card {
 		case 14: name = "Ace";
 			break;
 		}
-		name.concat( " of " ).concat( suit );
+		name += " of " + suit;
 	}
 	//1 a. ii. 2. Make a describe method that prints out information about a card.
 	public void describeCard() {
