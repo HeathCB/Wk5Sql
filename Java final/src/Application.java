@@ -4,14 +4,14 @@ public class Application {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	//2 create a class App with a main method
-	//3 Instantiate a deck and two players 
-	// Call the shuffle method on the deck
+	//2 create a class App with a main method.
+	//3 Instantiate a deck and two players .
+	// Call the shuffle method on the deck.
 	Deck deck = new Deck();
 	deck.shuffle();
 	Player heath = new Player( "Heath" );
 	Player tyler = new Player( "Tyler" );
-	//4 Using a for loop iterate 52 times calling the Draw method on each player  
+	//4 Using a for loop iterate 52 times calling the Draw method on each player. 
 	for( int x = 0; x < 52; x++) {
 		if ( x % 2 == 0 ) {
 			heath.draw( deck );

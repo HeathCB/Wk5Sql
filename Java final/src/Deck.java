@@ -16,11 +16,11 @@ public class Deck {
 			}
 		}
 	}
-	//1. b. ii. 1 Shuffle method 
+	//1. b. ii. 1 Create a shuffle method.
 	public void shuffle() {
 		Collections.shuffle( cards );
 	}
-	//1. b. ii. 2 Draw method
+	//1. b. ii. 2 Create a draw method.
 	public Card draw() {
 		return cards.remove( 0 );
 		

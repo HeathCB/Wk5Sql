@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
 public class Player {
-	//1. c. i. 1. creating hand a list of Card
+	//1. c. i. 1. creating hand a list of Card.
 	ArrayList<Card> hand = new ArrayList<Card>();
-	//1. c. i. 2 & 3. Creating score value and name field for the player class
+	//1. c. i. 2 & 3. Creating score value and name field for the player class.
 	private int score;
 	String name;
 	
-	//Score values getters and setters
+	//Score values with getters and setters.
 	public int getScore() {
 		return score;
 	}
@@ -31,7 +31,7 @@ public class Player {
 		}
 		
 	}
-	//1. c. ii. 2 flip returns the top card of the hand
+	//1. c. ii. 2 flip returns the top card of the hand.
 	public Card flip() {
 		return hand.remove( 0 );
 	}
@@ -39,7 +39,7 @@ public class Player {
 	public void draw( Deck deck ) {
 		hand.add( deck.draw() );
 	}
-	//1. c. ii. 4 Increment score adds 1 to the players score field
+	//1. c. ii. 4 Increment score adds 1 to the players score field.
 	public void incrementScore() {
 		score++;
 	}
