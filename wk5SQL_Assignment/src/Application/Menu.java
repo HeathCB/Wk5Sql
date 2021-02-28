@@ -8,25 +8,36 @@ import DAO.CarsDao;
 import Entity.Cars;
 
 public class Menu {
-	
+	/*
+	 * the three private fields are as follows:
+	 * The first field is for my scanner
+	 * The second field is an array of strings for my menu options
+	 * The third just instantiates the cars dao
+	 */
 	private Scanner scanner = new Scanner( System.in );
 	private String[] menuOpts = { "Display Cars", "Create new car", "Update Car info", "Delete a car" };
 	private CarsDao carsDao = new CarsDao();
-	
+	/*
+	 * This method prints the menu with the options
+	 */
 	private void printMenu() {
 		System.out.println( " ----------------- " );
 		for ( int i = 0; i < menuOpts.length; i++ ) {
 			System.out.println( ( i + 1) + ")" + menuOpts[ i ] );
 		}
 	}
-	
+	/*
+	 * This is teh first option that displays the cars 
+	 */
 	private void displayCars() throws SQLException {
 		List<Cars> myCars = carsDao.getAllCars();
 		for ( Cars c : myCars) {
 			System.out.println( c.getId() + " - " + c.getMake() + " - " + c.getModel() + " - " + c.getModelYear() );
 		}
 	}
-	
+	/*
+	 * This method is used to add a car to the database
+	 */
 	private void addCar() throws SQLException{
 		System.out.print("Enter new car id");
 		String nl  = scanner.nextLine();
@@ -51,6 +62,9 @@ public class Menu {
 			}
 		}
 	}
+	/*
+	 * This method is used to update a car in the database
+	 */
 	
 	private void updateCars() throws SQLException {
 		System.out.print("Enter car id");
@@ -76,6 +90,9 @@ public class Menu {
 			}
 		}
 	}
+	/*
+	 * This method is for deleting a car from the database
+	 */
 	private void deleteACar() throws SQLException {
 		System.out.print( "Enter car id to delete" );
 		String nl = scanner.nextLine();
@@ -90,7 +107,10 @@ public class Menu {
 		}
 	}
 
-	
+/*
+ * This method is for displaying the menu and its options
+ * I used switch instead of if elses because I prefer the look of this over multiple if else statements.	
+ */
 	
 	public void start() {
 		String selection = " ";
@@ -128,6 +148,7 @@ public class Menu {
 				scanner.nextLine();
 			}
 		}while ( !selection.equals( "-1" ));
+		carsDao.close();
 	}
 	
 	

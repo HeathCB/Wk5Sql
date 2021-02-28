@@ -1,5 +1,16 @@
 package Entity;
 
+/*
+ * 
+ * This is my where I created my cars class.
+ * Below is my Cars method as well as my getters and setters which make it up.
+ * 
+ * 
+ */
+
+
+
+
 public class Cars {
 
 	private int id;

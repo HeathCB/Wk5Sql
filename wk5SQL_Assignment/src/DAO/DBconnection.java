@@ -5,11 +5,17 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public final class DBconnection {
-	
+	/*
+	 * This is the information needed for the connection
+	 */
 	private final static String URL = "jdbc:mysql://localhost:3306/cars";
 	private final static String USERNAME = "root";
 	private final static String PASSWORD = "Maddie2422";
-	
+	/*
+	 * Defined my connection as private to follow a singleton design pattern
+	 * 
+	 * The methods that follow are what actually connects to the database.
+	 */
 	private static DBconnection instance = new DBconnection();
 	private static Connection connection;
 
